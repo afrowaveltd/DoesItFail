@@ -1,5 +1,9 @@
 # Development environment and VS Code
 
+## Guided C learning
+
+- [Lesson 01 — From C source to a static library](LESSON_01_COMPILATION_LINKING.md) — `.h`, `.c`, `.o`, `.a`, compilation and linking using this real repository.
+
 ## Debian setup
 
 ```sh

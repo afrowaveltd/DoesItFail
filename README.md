@@ -79,6 +79,10 @@ DoesItFail/
 └── Makefile
 ```
 
+## Guided learning
+
+- [Lesson 01 — From C source to a static library](Docs/LESSON_01_COMPILATION_LINKING.md) — first hands-on lesson based on the current Makefile, object files and linker.
+
 ## Learning policy
 
 Explain the mechanism first, develop one feature at a time, and test before advancing. Keep the initial public API minimal. Source code and docs are in English; C style is C17, Allman braces, four-space indentation, `snake_case` and `dif_` for exported identifiers. No external dependency is permitted in the core.
