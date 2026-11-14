@@ -8,6 +8,7 @@
 - [Lesson 04 — Struct values and pointer member access](LESSON_04_STRUCT_VALUES_POINTERS.md) — value copies, copied pointers, `.` versus `->` and opaque contexts.
 - [Lesson 05 — `const`, ownership and dynamic memory](LESSON_05_CONST_OWNERSHIP_MEMORY.md) — read-only views, `malloc`, `free`, borrowers and memory errors.
 - [Lesson 06 — Embedded arrays versus pointers](LESSON_06_ARRAYS_VS_POINTERS.md) — structure layout, shallow copy, aliases and one-owner allocation policy.
+- [Lesson 07 — Deep copy and failure-safe ownership](LESSON_07_DEEP_COPY_OWNERSHIP.md) — `person_create`, `person_clone`, `person_destroy`, allocation failure cleanup and ownership contracts.
 
 ## Debian setup
 

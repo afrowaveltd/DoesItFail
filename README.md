@@ -87,6 +87,7 @@ DoesItFail/
 - [Lesson 04 — Struct values and pointer member access](Docs/LESSON_04_STRUCT_VALUES_POINTERS.md) — learn when a function changes a copy or the original object.
 - [Lesson 05 — `const`, ownership and dynamic memory](Docs/LESSON_05_CONST_OWNERSHIP_MEMORY.md) — use `const`, `malloc` and `free` with an explicit ownership contract.
 - [Lesson 06 — Embedded arrays versus pointers](Docs/LESSON_06_ARRAYS_VS_POINTERS.md) — compare inline character storage to pointer members and their ownership implications.
+- [Lesson 07 — Deep copy and failure-safe ownership](Docs/LESSON_07_DEEP_COPY_OWNERSHIP.md) — learn to create, clone and release dynamically owned structures safely.
 
 ## Learning policy
 
