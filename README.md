@@ -85,6 +85,7 @@ DoesItFail/
 - [Lesson 02 — Static archives and function pointers](Docs/LESSON_02_ARCHIVES_CALLBACKS.md) — understand how `dif_test_case` stores callbacks, and how the runner calls them.
 - [Lesson 03 — Scope, lifetime, storage duration and explicit state](Docs/LESSON_03_SCOPE_LIFETIME_STORAGE.md) — when to avoid hidden `static` state and prefer context structures.
 - [Lesson 04 — Struct values and pointer member access](Docs/LESSON_04_STRUCT_VALUES_POINTERS.md) — learn when a function changes a copy or the original object.
+- [Lesson 05 — `const`, ownership and dynamic memory](Docs/LESSON_05_CONST_OWNERSHIP_MEMORY.md) — use `const`, `malloc` and `free` with an explicit ownership contract.
 
 ## Learning policy
 
