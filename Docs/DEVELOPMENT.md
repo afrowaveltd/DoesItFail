@@ -3,6 +3,7 @@
 ## Guided C learning
 
 - [Lesson 01 — From C source to a static library](LESSON_01_COMPILATION_LINKING.md) — `.h`, `.c`, `.o`, `.a`, compilation and linking using this real repository.
+- [Lesson 02 — Static archives and function pointers](LESSON_02_ARCHIVES_CALLBACKS.md) — `ar`, indirect calls, test registration, borrowed contexts, and reporter callbacks.
 
 ## Debian setup
 

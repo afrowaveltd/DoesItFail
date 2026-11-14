@@ -179,7 +179,7 @@ tests[i].function(&context);
 
 This is **a function pointer**, not a pointer to ordinary data. The test functions are compiled into CBox (or another consumer), while DoesItFail knows only the agreed function signature. This is how one generic runner executes tests it has never seen before.
 
-We will explore the memory model, type matching, and callback/reporting path in Lesson 02.
+Continue with [Lesson 02 — Static archives and function pointers](LESSON_02_ARCHIVES_CALLBACKS.md), covering type matching, callback registration, and the reporting path.
 
 ## Practical checkpoint — answer before reading ahead
 
