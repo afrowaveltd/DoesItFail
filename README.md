@@ -85,6 +85,20 @@ Explain the mechanism first, develop one feature at a time, and test before adva
 
 See [Architecture](Docs/ARCHITECTURE.md), [API](Docs/API.md), [Development](Docs/DEVELOPMENT.md), and [Roadmap](Docs/ROADMAP.md).
 
+## Using DoesItFail from CBox
+
+[CBox](https://github.com/afrowaveltd/CBox) is an initial external consumer. Clone both repositories as siblings, then invoke the optional CBox test integration:
+
+```bash
+# Example parent directory containing both repositories:
+#   CBox/
+#   DoesItFail/
+cd CBox
+make test-framework
+```
+
+This verifies that CBox can compile and link the **independent static library**. It is not a test of the learner-owned Result implementation; `make test-result` remains a separate CBox exercise. See [CBox integration guide](https://github.com/afrowaveltd/CBox/blob/main/Docs/DOES_IT_FAIL_INTEGRATION.md).
+
 ## License
 
 MIT, see [LICENSE](LICENSE).
