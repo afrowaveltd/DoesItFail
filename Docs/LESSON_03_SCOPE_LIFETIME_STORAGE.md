@@ -116,6 +116,14 @@ The public `typedef struct dif_test_context dif_test_context;` exposes a **point
 - `extern` globals: rare, deliberate shared state with explicit ownership and synchronization.
 - Context structures and parameter passing: preferred for reusable CBox modules, DoesItFail instances and future AJIS/AjisFS components.
 
+## Naming local static objects without hiding shared state
+
+A useful review convention is to give a function-local `static` object a short function-derived prefix. Example: `print_something()` → `ps_printed_count`. This reduces ambiguity in search results and code reviews, but cannot turn the single persistent object into per-instance state. Do not depend on a naming scheme to enforce isolation.
+
+Two independent **runner instances within one process** can still share the same static object if their code calls the same function. Two independent **processes** normally have separate ordinary static storage. A shared mutable static counter accessed simultaneously from multiple threads also creates a data race without appropriate synchronization.
+
+This motivates passing context structures when creating separate instances of test runners, queues, or disk managers. `dif_run_suite()` already uses automatic per-call/per-test objects rather than one static shared counter.
+
 ## Safe experiment
 
 Create a temporary `counter.c` outside the repository and type:

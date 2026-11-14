@@ -45,6 +45,22 @@ make test-framework DOES_IT_FAIL_DIR="/path/to/DoesItFail"
 
 The CBox Makefile **builds a test-only integration binary** using this static library. It does not require DoesItFail for normal `make test` or for building CBox production modules. On Windows/MinGW the environment may require a different compiler/ar path; CBox uses the compiler specified by its Makefile.
 
+## Local state naming convention
+
+To make persistent local state easy to recognize during review and debugging, **function-local `static` variables must carry a short, readable function-derived prefix**. For example, `print_something()` may declare `static unsigned long ps_printed_count`. Where useful, ordinary function-local variables may use the same prefix; keep short indices and parameters readable rather than making every name artificially long. Use descriptive `snake_case` names and do not reuse prefixes ambiguously within a module.
+
+The prefix is a readability aid, **not an isolation or thread-safety mechanism**. A block-scope `static` object remains shared across all calls to its function in the same process. For state belonging to independent instances, prefer an explicitly passed context structure. GCC/Clang `-Wshadow` can help flag accidental shadowing; this is supplementary and does not prevent same-named locals in different functions.
+
+Example:
+
+```c
+void print_something(const char *to_print)
+{
+    static unsigned long ps_printed_count = 0;
+    /* Use to_print, then count a successful operation. */
+}
+```
+
 ## Rules for future additions
 
 1. Public API -> header, implementation, bootstrap tests, example, API docs.
