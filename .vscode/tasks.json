@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "DoesItFail: build library",
+            "type": "shell",
+            "command": "make",
+            "args": ["all"],
+            "group": "build",
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "DoesItFail: test",
+            "type": "shell",
+            "command": "make",
+            "args": ["test"],
+            "group": "test",
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "DoesItFail: build demo",
+            "type": "shell",
+            "command": "make",
+            "args": ["build/console_demo"],
+            "group": "build",
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "DoesItFail: console demo",
+            "type": "shell",
+            "command": "make",
+            "args": ["demo"],
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "DoesItFail: clean",
+            "type": "shell",
+            "command": "make",
+            "args": ["clean"],
+            "problemMatcher": []
+        }
+    ]
+}

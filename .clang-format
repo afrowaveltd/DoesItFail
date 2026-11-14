@@ -1,0 +1,7 @@
+BasedOnStyle: LLVM
+Language: Cpp
+UseTab: Never
+IndentWidth: 4
+BreakBeforeBraces: Allman
+PointerAlignment: Right
+ColumnLimit: 100
