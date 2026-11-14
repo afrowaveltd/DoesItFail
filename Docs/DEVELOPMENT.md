@@ -5,6 +5,7 @@
 - [Lesson 01 — From C source to a static library](LESSON_01_COMPILATION_LINKING.md) — `.h`, `.c`, `.o`, `.a`, compilation and linking using this real repository.
 - [Lesson 02 — Static archives and function pointers](LESSON_02_ARCHIVES_CALLBACKS.md) — `ar`, indirect calls, test registration, borrowed contexts, and reporter callbacks.
 - [Lesson 03 — Scope, lifetime, storage duration and explicit state](LESSON_03_SCOPE_LIFETIME_STORAGE.md) — static locals, globals, shadowing, context pointers and state ownership.
+- [Lesson 04 — Struct values and pointer member access](LESSON_04_STRUCT_VALUES_POINTERS.md) — value copies, copied pointers, `.` versus `->` and opaque contexts.
 
 ## Debian setup
 
